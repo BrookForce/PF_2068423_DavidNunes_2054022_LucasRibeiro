@@ -1,6 +1,6 @@
 const { Like } = require('../sequelize');
 
-// Gostar de um tweet
+
 exports.likeTweet = (req, res, next) => {
     const { tweet_id } = req.body;
     const user_id = req.user.user_id;
@@ -14,7 +14,7 @@ exports.likeTweet = (req, res, next) => {
         });
 };
 
-// Desgostar de um tweet
+
 exports.unlikeTweet = (req, res, next) => {
     const { tweet_id } = req.body;
     const user_id = req.user.user_id;
