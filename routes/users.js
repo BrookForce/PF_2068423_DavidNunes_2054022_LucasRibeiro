@@ -18,13 +18,13 @@ const { validateUserData } = require('../middlewares/validateData');
  *             properties:
  *               username:
  *                 type: string
- *                 example: "usuario123"
+ *                 example: "utilizador123"
  *               password:
  *                 type: string
  *                 example: "password123"
  *               email:
  *                 type: string
- *                 example: "usuario@example.com"
+ *                 example: "utilizador@example.com"
  *     responses:
  *       201:
  *         description: Utilizador criado com sucesso
@@ -48,7 +48,7 @@ router.post('/signup', validateUserData, usersController.signup);
  *             properties:
  *               email:
  *                 type: string
- *                 example: "usuario@example.com"
+ *                 example: "utilizador@example.com"
  *               password:
  *                 type: string
  *                 example: "password123"
