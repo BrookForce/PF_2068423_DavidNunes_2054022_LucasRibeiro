@@ -1,6 +1,6 @@
 const { User, Tweet } = require('../sequelize');
 
-// Gestão de usuários
+
 exports.getAllUsers = (req, res, next) => {
     User.findAll()
         .then(users => {
@@ -36,7 +36,7 @@ exports.deleteUser = (req, res, next) => {
         });
 };
 
-// Gestão de tweets
+
 exports.getAllTweets = (req, res, next) => {
     Tweet.findAll()
         .then(tweets => {
