@@ -4,7 +4,7 @@ exports.getFeed = async (req, res) => {
     try {
         const userId = req.user.id;
 
-        // Obtenha todos os tweets dos usuários seguidos pelo usuário atual
+        
         const tweets = await Tweet.findAll({
             include: [
                 {
