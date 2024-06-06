@@ -3,7 +3,7 @@ const router = express.Router();
 const adminController = require('../controllers/adminController');
 const authenticateTokenFromHeaders = require('../middlewares/authenticateToken');
 
-// Middleware para autenticar o token JWT
+
 router.use(authenticateTokenFromHeaders);
 
 /**
