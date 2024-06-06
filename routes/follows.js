@@ -3,7 +3,7 @@ const router = express.Router();
 const followsController = require('../controllers/followsController');
 const authenticateTokenFromHeaders = require('../middlewares/authenticateToken');
 
-// Middleware para autenticar o token JWT
+
 router.use(authenticateTokenFromHeaders);
 
 /**
