@@ -1,6 +1,6 @@
 const { Follow } = require('../sequelize');
 
-// Seguir usuário
+
 exports.followUser = async (req, res) => {
     const follower_id = req.user.user_id;
     const { following_id } = req.body;
@@ -14,7 +14,7 @@ exports.followUser = async (req, res) => {
     }
 };
 
-// Parar de seguir usuário
+
 exports.unfollowUser = async (req, res) => {
     const follower_id = req.user.user_id;
     const { following_id } = req.body;
