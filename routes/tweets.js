@@ -5,7 +5,7 @@ const { validateTweetData } = require('../middlewares/validateData');
 const authenticateTokenFromHeaders = require('../middlewares/authenticateToken');
 const upload = require('../middlewares/upload');
 
-// Middleware para autenticar o token JWT
+
 router.use(authenticateTokenFromHeaders);
 
 /**
