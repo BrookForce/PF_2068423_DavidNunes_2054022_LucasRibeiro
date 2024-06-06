@@ -1,6 +1,6 @@
 const { Comment } = require('../sequelize');
 
-// Criar comentário
+
 exports.createComment = async (req, res) => {
     const { content, tweet_id } = req.body;
     const user_id = req.user.user_id;
@@ -14,7 +14,7 @@ exports.createComment = async (req, res) => {
     }
 };
 
-// Obter comentários de um tweet específico
+
 exports.getCommentsByTweet = async (req, res) => {
     const tweet_id = req.params.tweet_id;
 
@@ -27,7 +27,7 @@ exports.getCommentsByTweet = async (req, res) => {
     }
 };
 
-// Deletar comentário
+
 exports.deleteComment = async (req, res) => {
     const comment_id = req.params.comment_id;
 
