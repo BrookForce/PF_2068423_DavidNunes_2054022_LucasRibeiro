@@ -3,7 +3,7 @@ const router = express.Router();
 const commentsController = require('../controllers/commentsController');
 const authenticateTokenFromHeaders = require('../middlewares/authenticateToken');
 
-// Middleware para autenticar o token JWT
+
 router.use(authenticateTokenFromHeaders);
 
 /**
